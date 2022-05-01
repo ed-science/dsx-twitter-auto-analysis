@@ -27,10 +27,10 @@ TEST_COUNTRY = 'test-tweet-country'
 TEST_YEAR = '2017'
 TEST_MONTH = '01'
 TEST_DAY = '23'
-TEST_TIME = '{}-{}-{} 12:34:56.789'.format(TEST_YEAR, TEST_MONTH, TEST_DAY)
+TEST_TIME = f'{TEST_YEAR}-{TEST_MONTH}-{TEST_DAY} 12:34:56.789'
 TEST_LONGITUDE = '12.345'
 TEST_LATITUDE = '98.765'
-TEST_POSITION = 'pos ({} {})'.format(TEST_LONGITUDE, TEST_LATITUDE)
+TEST_POSITION = f'pos ({TEST_LONGITUDE} {TEST_LATITUDE})'
 TEST_ROW = type('TestRow', (object,), {'MESSAGE_LOCATION': TEST_POSITION,
                                        'MESSAGE_POSTED_TIME': TEST_TIME,
                                        })()
